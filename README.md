@@ -1,8 +1,11 @@
-# laravel-react-announcementsto get this installed on local environment please have mysql, laravel, composer and react installed. 
+# laravel-react-announcements
+
+Installation instructions 
+Please have mysql, laravel, composer and react installed. 
 
 
 mysql running in xampp
-run the scripts in the database set up first 
+run the scripts in the database set up first folder
 
 
 i used 2 vscodes one for laravel one for react. 
