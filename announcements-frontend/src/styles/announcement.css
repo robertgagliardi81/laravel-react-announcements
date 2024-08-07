@@ -1,0 +1,81 @@
+ /* announcement tile styling */
+.announcement-tile {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; 
+    width: 250px; 
+    float: left !important;
+    text-align: center;
+  }
+  
+ 
+  .announcement-tile h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  
+ 
+  .announcement-date {
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+ 
+  .announcement-body {
+    margin-top: 8px;
+  }
+ 
+  .announcement-list {
+    display: flex;
+    overflow-x: auto;  
+    white-space: nowrap;  
+    gap: 16px;  
+    padding: 8px; 
+  }
+ 
+  .announcement-list::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .announcement-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .announcement-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+ 
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin: 20px 0;  
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination .active {
+    font-weight: bold;
+  }
+  
+ 
+  .announcement-list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 16px;
+    padding: 8px;
+  }
+  
