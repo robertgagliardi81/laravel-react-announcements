@@ -1,4 +1,4 @@
-# laravel-react-announcementsto get this installed on local environment please have mysql, laravel, composer and react installed. 
+to get this installed on local environment please have mysql, laravel, composer and react installed. 
 
 
 mysql running in xampp

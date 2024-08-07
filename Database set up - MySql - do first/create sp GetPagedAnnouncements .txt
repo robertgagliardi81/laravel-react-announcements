@@ -1,0 +1,31 @@
+DELIMITER //
+
+
+--RG- 8/3/2024 - returns the announcements paged data set and totalcount of announcements for that user 
+
+
+CREATE PROCEDURE GetPagedAnnouncements(
+    IN PageNumber INT,
+    IN PageSize INT,
+    IN PersonID INT,
+    OUT TotalCount INT
+)
+BEGIN
+    DECLARE Offset INT;
+
+    -- RG- 8/3/2024 - Calculate the total count of announcements
+    SELECT COUNT(*) INTO TotalCount
+    FROM announcements
+    WHERE announcements.PersonID = PersonID;
+
+    SET Offset = (PageNumber - 1) * PageSize;
+
+    -- RG- 8/3/2024 - Retrieve the paged announcements
+    SELECT id, author, announcements.date AS date, announcements.body AS body
+    FROM announcements
+    WHERE announcements.PersonID = PersonID
+    ORDER BY id ASC
+    LIMIT Offset, PageSize;
+END //
+
+DELIMITER ;

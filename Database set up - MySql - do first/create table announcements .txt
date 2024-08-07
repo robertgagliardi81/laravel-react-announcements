@@ -1,0 +1,7 @@
+CREATE TABLE announcements (
+    id INT PRIMARY KEY NOT NULL,
+    personid INT NOT NULL,
+    author TEXT,
+    body TEXT,
+    date DATETIME
+);
